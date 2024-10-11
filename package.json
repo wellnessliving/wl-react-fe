@@ -4,7 +4,12 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
+    "dev": "vite --mode trunk",
+    "dev:stable": "vite --mode stable",
+    "dev:production": "vite --mode production",
+    "build:stable": "tsc -b && vite build --mode stable",
+    "build:stable-old": "tsc -b && vite build --mode stable-old",
+    "build:beta": "tsc -b && vite build --mode beta",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "serve": "vite preview",
