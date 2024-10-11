@@ -1,9 +1,9 @@
 import { render, screen, fireEvent } from '@testing-library/react';
-import App from './App.tsx';
+import Home from './Home.tsx';
 
-describe('App test', () => {
-  it('renders the App component', () => {
-    render(<App />);
+describe('Home test', () => {
+  it('renders the Home component', () => {
+    render(<Home />);
 
     expect(screen.getByText('Vite + React')).toBeInTheDocument();
     expect(screen.getByText('count is 0')).toBeInTheDocument();
